@@ -47,7 +47,7 @@ Se aparecer o texto abaixo:
 O projeto vai rodar no endereço: [http://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io:8082/](http://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io:8082/). 
 Não se esqueça de substituir *[NOMEDOWORKSPACE]* pelo nome do workspace e *[NOMEDOUSUARIO]* pelo nome do seu usuário no c9.
 
-Por exemplo, o meu ficou assim: [http://ionic-node-thdaraujo.c9users.io:8082/](http://ionic-node-thdaraujo.c9users.io:8082/)
+Por exemplo, o meu ficou assim: [http://ionic-node-mongo-thdaraujo.c9users.io:8082/](http://ionic-node-mongo-thdaraujo.c9users.io:8082/)
 
 ## Inicializando o mongoDB
 [(Documentação do cloud9)](https://docs.c9.io/docs/setting-up-mongodb)
@@ -77,7 +77,7 @@ $ npm start
 
 O projeto vai rodar no endereço: [http://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io/](http://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io/). Não se esqueça de substituir *[NOMEDOWORKSPACE]* pelo nome do workspace e *[NOMEDOUSUARIO]* pelo nome do seu usuário no c9.
 
-Por exemplo, o meu ficou assim: [http://ionic-node-thdaraujo.c9users.io/](http://ionic-node-thdaraujo.c9users.io/).
+Por exemplo, o meu ficou assim: [http://ionic-node-mongo-thdaraujo.c9users.io/](http://ionic-node-mongo-thdaraujo.c9users.io/).
 
 Com isso, teremos 3 terminais rodando o projeto ionic, o projeto node.js e o mongoDB.
 
