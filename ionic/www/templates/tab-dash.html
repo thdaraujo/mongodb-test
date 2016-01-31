@@ -1,0 +1,49 @@
+<ion-view view-title="Cadastro de Usuários">
+  <ion-content class="padding">
+    <form name="usuarioForm" ng-submit="enviarForm(usuarioForm, usuario)" novalidate>
+      <label class="item item-input">
+        <span class="input-label">Nome:</span>
+        <input type="text" name="nome" placeholder="digite seu nome" ng-model="usuario.nome" required />
+      </label>
+      <label class="item item-input">
+        <span class="input-label">E-mail:</span>
+        <input type="email" name="email" placeholder="digite seu e-mail" ng-model="usuario.email" required />
+      </label>
+
+      <label class="item item-input">
+        <span class="input-label">Senha:</span>
+        <input type="password" name="senha" placeholder="digite sua senha" ng-model="usuario.senha" required ng-minlength="6" />
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Data de Nascimento:</span>
+        <input type="text" name="nascimento" datetime="dd-MM-yyyy" ng-model="usuario.nascimento" placeholder="01/01/1999" />
+      </label>
+      <ion-list>
+        <ion-radio ng-model="usuario.sexo" ng-value="feminino">Feminino</ion-radio>
+        <ion-radio ng-model="usuario.sexo" ng-value="masculino">Masculino</ion-radio>
+        <ion-radio ng-model="usuario.sexo" ng-value="outro">Outro</ion-radio>
+      </ion-list>
+      <div class="padding">
+        <div ng-if="usuarioForm.$invalid">
+          <p>Os campos abaixo estão com problemas:</p>
+          <p ng-show="usuarioForm.nome.$error">* Nome</p>
+          <p ng-show="usuarioForm.email.$error">* Email</p>
+          <p ng-show="usuarioForm.senha.$error">* Senha</p>
+        </div>
+        <button type="submit" ng-disabled="usuarioForm.$invalid" class="button button-block button-positive">Enviar</button>
+      </div>
+    </form>
+    <div class="padding">
+      <button class="button button-block button-royal" ng-click="buscaAPI()">Buscar Usuários</button>
+      <div class="list card" ng-repeat="usuario in usuarios">
+        <div class="item item-avatar">
+          <h2>{{usuario.nome}}</h2>
+          <p>email: {{usuario.email}}</p>
+          <p>senha: {{usuario.senha}}</p>
+          <p>nascimento: {{usuario.nascimento | date: "dd-MM-yyyy"}}</p>
+          <p>sexo: {{usuario.sexo}}</p>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
