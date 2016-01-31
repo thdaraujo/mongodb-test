@@ -1,0 +1,7 @@
+{
+  "connections": {
+    "MongoDB": {
+      "connection_string": "mongodb://localhost/test"
+    }
+  }
+}
