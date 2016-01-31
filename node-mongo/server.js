@@ -10,7 +10,7 @@ function start(route, handle) {
     console.log("Request for " + pathname + " received.");
     console.log(request.method);
     
-    /*Tratamento de Cross-Origin no cloud9*/
+    /*Tratamento de CORS no cloud9*/
     
     response.setHeader('Access-Control-Allow-Origin', '*');
 
@@ -25,7 +25,7 @@ function start(route, handle) {
     } else {
         response.setHeader('Content-Type', 'application/json');
     }
-    /*Fim*/
+    /*Fim CORS*/
     
     if (request.method == 'POST') {
       var jsonString = '';

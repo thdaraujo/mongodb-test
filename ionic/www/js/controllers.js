@@ -65,7 +65,7 @@ angular.module('starter.controllers', [])
   };
 });
 
+//retorna a url atual do cloud 9. Modificar caso utilize porta ou host diferente.
 function getAPIBaseUrl() {
-  //retorna a url atual do cloud 9. Modificar caso utilize porta ou host diferente.
-  return 'http://' + location.hostname; // +  (location.port ? ':'+location.port: '');
+  return 'http://' + location.hostname;
 }
