@@ -24,7 +24,7 @@ Para instalar o ionic, digite no terminal o seguinte comando e aguarde:
 $ npm install -g cordova ionic
 ```
 
-**[OPCIONAL] Se você quiser criar um novo projeto ionic, basta rodar o comando `ionic start [template]`, por exemplo: `ionic start sidemenu`. **
+**OPCIONAL:** Se você quiser criar um novo projeto ionic, basta rodar o comando `ionic start [template]`, por exemplo: `ionic start sidemenu`.
 
 Para rodar o projeto ionic na porta 8082, entre na pasta do projeto ionic (blank) e rode o projeto na porta 8082:
 ```
@@ -44,10 +44,11 @@ Se aparecer o texto abaixo:
 
 É só digitar **1** e dar enter.
 
-O projeto vai rodar no endereço: [https://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io:8082/](https://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io:8082/). Não se esqueça de substituir *[NOMEDOWORKSPACE]* pelo nome do workspace e *[NOMEDOUSUARIO]* pelo nome do seu usuário no c9.
+O projeto vai rodar no endereço: [http://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io:8082/](http://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io:8082/). Não se esqueça de substituir *[NOMEDOWORKSPACE]* pelo nome do workspace e *[NOMEDOUSUARIO]* pelo nome do seu usuário no c9.
 
-Por exemplo, o meu ficou assim: [https://ionic-node-thdaraujo.c9users.io:8082/](https://ionic-node-thdaraujo.c9users.io:8082/)
+Por exemplo, o meu ficou assim: [http://ionic-node-thdaraujo.c9users.io:8082/](http://ionic-node-thdaraujo.c9users.io:8082/)
 
+**Importante:** NUNCA coloque _http**s**_ na url do app, pois o cloud9 dá vários problemas por causa disso. Sempre abra o app ionic com o link *http://etc...* 
 
 ## Inicializando o mongoDB
 [(Documentação do cloud9)](https://docs.c9.io/docs/setting-up-mongodb)
@@ -65,7 +66,7 @@ Com isso, o servidor do mongoDB vai ficar rodando nesse terminal.
 
 ## Rodando o projeto o node.js
 Por fim, vamos rodar o projeto node.js também em outro terminal.
-
+h
 Abra outro terminal via menu `Window > New Terminal` ou pelo atalho `ALT + T`.
 No terminal que for aberto, entre na pasta do projeto node.js (*mongodb-test/mongodb-test*), instale as dependências com o *npm* e rode o projeto com *start*:
 
@@ -75,9 +76,9 @@ $ npm install
 $ npm start
 ```
 
-O projeto vai rodar no endereço: [https://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io/](https://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io/). Não se esqueça de substituir *[NOMEDOWORKSPACE]* pelo nome do workspace e *[NOMEDOUSUARIO]* pelo nome do seu usuário no c9.
+O projeto vai rodar no endereço: [http://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io/](http://[NOMEDOWORKSPACE]-[NOMEDOUSUARIO].c9users.io/). Não se esqueça de substituir *[NOMEDOWORKSPACE]* pelo nome do workspace e *[NOMEDOUSUARIO]* pelo nome do seu usuário no c9.
 
-Por exemplo, o meu ficou assim: [https://ionic-node-thdaraujo.c9users.io/](https://ionic-node-thdaraujo.c9users.io/).
+Por exemplo, o meu ficou assim: [http://ionic-node-thdaraujo.c9users.io/](http://ionic-node-thdaraujo.c9users.io/).
 
 Com isso, teremos 3 terminais rodando o projeto ionic, o projeto node.js e o mongoDB.
 
