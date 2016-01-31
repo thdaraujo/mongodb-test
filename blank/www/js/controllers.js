@@ -13,7 +13,7 @@ angular.module('starter.controllers', [])
   
   var postarAPI = function(usuario){
         // Simple GET request example:
-        var url = "http://ionic-node-thdaraujo.c9users.io/inserejson";
+        var url = "http://deletar-thdaraujo.c9users.io/inserejson";
         var dados = {
           "dados": {
             "nome": usuario.nome,
@@ -36,7 +36,7 @@ angular.module('starter.controllers', [])
     };
     $scope.buscaAPI = function(){
         // Simple GET request example:
-      $http.get('https://ionic-node-thdaraujo.c9users.io/getDocumentsFromMongo')
+      $http.get('http://deletar-thdaraujo.c9users.io/getDocumentsFromMongo')
       .then(function successCallback(response){
         $scope.data = response.data;
         console.log(response);
